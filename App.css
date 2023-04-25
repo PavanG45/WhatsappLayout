@@ -1,0 +1,109 @@
+
+.App{
+  display: flex;
+  height:99vh ;
+  flex-direction: row;
+  position: relative;
+  border: 3px solid black;
+  flex-wrap: wrap;
+}
+
+.left-block {
+  background-color: rgb(236, 198, 147);
+  width: 30%;
+  height:100%;
+ padding-left:2%;
+}
+.right-block {
+ position: absolute;
+   right: 0px;
+   width: 70%;
+   height: 100%;
+   background-color: rgb(97, 94, 94);
+    
+}
+
+
+
+ul {
+  list-style-type: none;
+  background-color: rgb(47, 34, 34);
+  border: 4px solid rgb(229, 147, 32);
+  border-radius: 10px;
+  width:70%;
+
+}
+hr{
+ border: 2px solid orange;
+  
+}
+
+.trs{
+
+  background-color: red;
+  text-align: center;
+  
+  
+}
+.submit{
+  font-weight:bolder;
+  background-color: rgb(13, 25, 1);
+  animation-name: sub;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+@keyframes sub {
+  0%{color: bisque;}
+  25%{color: rgb(235, 105, 23);}
+  50%{ color:rgb(91, 71, 220);}
+  75%{ color: rgb(92, 189, 83);}
+  100%{color: fuchsia;}
+  
+}
+
+
+th{
+  text-align: left;
+}
+
+
+.list{
+  width: fit-content;
+  padding: 5px;
+  color: white;
+}
+form{
+  display:flex;
+  font-size: 20px;
+  justify-content: center;
+  
+}
+
+input{
+  background-color: bisque;
+  padding: 4px;
+}
+
+table {
+  position:absolute;
+ 
+  border: 3px solid rgb(1, 9, 11);
+  /* background-color: rgb(177, 245, 217); */
+  background-color: white;
+}
+h1{
+  color: hsl(0, 100%, 57%);
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span{
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  display: none;
+}
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+/* input:invalid[focused="true"]{
+  border: 1px solid rgb(254, 0, 0);
+} */
